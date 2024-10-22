@@ -5,7 +5,7 @@ document.getElementById('shorten-form').addEventListener('submit', function (eve
     const customAlias = document.getElementById('custom-alias').value;
 
     // Simulate URL shortening with custom alias (you can integrate a real URL shortening API here)
-    const baseUrl = "https://short.ly/";
+    const baseUrl = "https://vbadshah6472.github.io/url-shortener/s/";
     const shortUrl = baseUrl + (customAlias ? customAlias : generateRandomString());
 
     // Display the shortened URL
