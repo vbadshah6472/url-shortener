@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Custom URL Shortener by Nishaayr</h1>
+        <p>Shorten your URL and customize the alias!</p>
+
+        <form id="shorten-form">
+            <div class="input-container">
+                <label for="original-url">Enter Original URL</label>
+                <input type="url" id="original-url" placeholder="https://example.com" required>
+            </div>
+
+            <div class="input-container">
+                <label for="custom-alias">Custom Alias (optional)</label>
+                <input type="text" id="custom-alias" placeholder="my-alias">
+            </div>
+
+            <button type="submit">Shorten URL</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <p>Your shortened URL:</p>
+            <a id="short-url" href="#" target="_blank"></a>
+            <button id="copy-btn">Copy URL</button>
+        </div>
+    </div>
+</body>
+</html>

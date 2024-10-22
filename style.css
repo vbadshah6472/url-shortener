@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #6a11cb;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.input-container {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+}
+
+button {
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background: #6a11cb;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2575fc;
+}
+
+#result {
+    margin-top: 2rem;
+}
+
+#result.hidden {
+    display: none;
+}
+
+#short-url {
+    font-weight: bold;
+    color: #2575fc;
+}
+
+#copy-btn {
+    margin-top: 1rem;
+    background: #ff5c5c;
+}
+
+#copy-btn:hover {
+    background: #ff3030;
+}
+
+/* Animation effects */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none;
+    border-color: #6a11cb;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
